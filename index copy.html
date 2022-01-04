@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table App</title>
+</head>
+
+<body>
+    <div id="main">
+        <h1 id="fst"> Multiplication Table</h1>
+        <input type="text" placeholder="Enter a number" id="num">
+        <button type="button" onclick="multiply()">calculate</button>
+        <h3 id="result"></h3>
+    </div>
+    <style>
+        * {
+            background-color: rgb(255, 244, 229);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #main {
+            width: 300px;
+            height: 400px;
+            margin: auto;
+            background-color: black;
+
+        }
+
+        #result {
+            background-color: #fffd;
+
+        }
+    </style>
+
+    <script>
+        // function multiply() {
+        //     // debugger
+        //     // var input = document.getElementById("input").value;
+
+
+        //     // for (var i = 0; value < 10; i++) {
+
+        //     //   var oneBaseIndex = i+1;
+
+        //     var table = +prompt("Enter any number of Table ");
+        //     var length = +prompt("Enter Table Range :");
+        //     var i = 0;
+
+        //     document.write("Multiplication Table is : " + table);
+        //     document.write("<br>" + " Table Range is :" + length);
+        //     for (i = 0; i < length; i++) {
+        //         var onebase = i + 1;
+        //         document.getElementById("<br>" + table + " * " + onebase + " = " + (onebase * table))
+
+        //     }
+
+
+        // }
+
+        function multiply() {
+            // debugger
+
+            var input = document.getElementById("num").value;
+            for (var i = 0; i < 10; i++) {
+                var onBaseIndex = i + 1;
+
+                document.getElementById("result").innerText += `${input} x ${onBaseIndex}=${input} x ${onBaseIndex * input}` + "\n";
+                console.log(`${input} X ${onBaseIndex}=${input} X ${onBaseIndex * input}`);
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
